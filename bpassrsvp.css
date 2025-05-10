@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Boarding Pass Container */
+.boarding-pass-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Boarding Pass */
+.boarding-pass {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.section {
+    padding: 25px 20px;
+}
+
+.section:last-child {
+    border-right: none; 
+}
+
+/* Left Section - Flight Info */
+.section-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flight-info {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.6;
+}
+
+.flight-info p {
+    margin-bottom: 12px;
+}
+
+.barcode-small {
+    width: 100px;
+    height: 85px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='100%25' height='100%25' fill='white'/%3E%3Cg%3E%3Crect x='5' y='5' width='2' height='70' fill='black'/%3E%3Crect x='9' y='5' width='1' height='70' fill='black'/%3E%3Crect x='12' y='5' width='3' height='70' fill='black'/%3E%3Crect x='16' y='5' width='1' height='70' fill='black'/%3E%3Crect x='19' y='5' width='2' height='70' fill='black'/%3E%3Crect x='23' y='5' width='3' height='70' fill='black'/%3E%3Crect x='28' y='5' width='1' height='70' fill='black'/%3E%3Crect x='32' y='5' width='2' height='70' fill='black'/%3E%3Crect x='36' y='5' width='3' height='70' fill='black'/%3E%3Crect x='42' y='5' width='1' height='70' fill='black'/%3E%3Crect x='45' y='5' width='2' height='70' fill='black'/%3E%3Crect x='49' y='5' width='1' height='70' fill='black'/%3E%3Crect x='52' y='5' width='3' height='70' fill='black'/%3E%3Crect x='57' y='5' width='1' height='70' fill='black'/%3E%3Crect x='60' y='5' width='2' height='70' fill='black'/%3E%3Crect x='64' y='5' width='3' height='70' fill='black'/%3E%3Crect x='69' y='5' width='1' height='70' fill='black'/%3E%3Crect x='72' y='5' width='2' height='70' fill='black'/%3E%3C/g%3E%3Ccircle cx='40' cy='40' r='15' fill='%23ff3366' opacity='0.3'/%3E%3Cpath d='M32,40 L48,40 M40,32 L40,48' stroke='%23ff3366' stroke-width='2'/%3E%3C/svg%3E");
+    background-size: contain;
+
+}
+
+/* Middle Section - Invitation */
+.section-middle {
+    flex: 1.5;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+} */
+
+.couple-names {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: #b22651;
+    margin-bottom: 15px;
+}
+
+.invitation-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    color: #333;
+    /* letter-spacing: 1px; */
+    margin-bottom: 20px;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.event-detail {
+    display: flex; 
+    /* justify-content: space-between; */
+    gap: 50px;
+    margin-left: 20px;
+
+}
+
+.event-label {
+    font-weight: 500;
+    font-size: 13px;
+    color: #555;
+}
+
+.event-value {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+
+.destination {
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    
+}
+.destination-2{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+
+}
+
+/* Right Section - RSVP */
+
+ .section-right {
+     flex: 1;
+    display: flex;
+    flex-direction: column; 
+    font-size: 20px;
+}
+
+ .header-2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}   
+
+
+.passenger-info {
+    margin-bottom: 30px;
+}
+
+.info-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+.contact-info p {
+   margin-top: 20px;
+}
+
+.contact-email {
+    color: #555;
+    font-weight: 500;
+}
+
+.event-date-small {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.date-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+}
+
+}
